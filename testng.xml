@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Cross Browser Test Suite">
+    <test name="Registration Process Chrome">
+        <parameter name="browser" value="chrome">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.RegistrationAndLoginProcessTest">
+
+            </class>
+        </classes>
+    </test>
+
+    <test name="Registration Process Firefox">
+        <parameter name="browser" value="firefox">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.RegistrationAndLoginProcessTest">
+
+            </class>
+        </classes>
+    </test>
+</suite>
