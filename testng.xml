@@ -22,4 +22,27 @@
             </class>
         </classes>
     </test>
+
+    <!-- Parametrized tests -->
+
+    <test name="Search Products Chrome">
+        <parameter name="browser" value="chrome">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.SearchProductTest">
+
+            </class>
+        </classes>
+    </test>
+    <test name="Search Products Firefox">
+        <parameter name="browser" value="firefox">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.SearchProductTest">
+
+            </class>
+        </classes>
+    </test>
 </suite>

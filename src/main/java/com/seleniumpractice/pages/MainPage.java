@@ -37,4 +37,10 @@ public class MainPage {
         loginButton.click();
     }
 
+    public void searchProduct(String productName) {
+        WebElement searchInputField = wait.until(ExpectedConditions.visibilityOf(this.searchInput));
+        searchInputField.sendKeys(productName);
+        searchSubmitButton.click();
+    }
+
 }
