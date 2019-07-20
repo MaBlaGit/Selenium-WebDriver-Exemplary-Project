@@ -1,6 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Cross Browser Test Suite">
+    <!-- Registration & Login -->
     <test name="Registration Process Chrome">
         <parameter name="browser" value="chrome">
 
@@ -24,7 +25,6 @@
     </test>
 
     <!-- Parametrized tests -->
-
     <test name="Search Products Chrome">
         <parameter name="browser" value="chrome">
 
@@ -41,6 +41,28 @@
         </parameter>
         <classes>
             <class name="com.seleniumpractice.tests.SearchProductTest">
+
+            </class>
+        </classes>
+    </test>
+
+    <!-- Adding products to the cart -->
+    <test name="Add selected product to the cart Chrome">
+        <parameter name="browser" value="chrome">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.OrderingFlowTest">
+
+            </class>
+        </classes>
+    </test>
+    <test name="Add selected product to the cart Firefox">
+        <parameter name="browser" value="firefox">
+
+        </parameter>
+        <classes>
+            <class name="com.seleniumpractice.tests.OrderingFlowTest">
 
             </class>
         </classes>

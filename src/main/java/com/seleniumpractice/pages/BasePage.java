@@ -24,7 +24,7 @@ public class BasePage {
             WebDriverManager.firefoxdriver().setup();
             this.driver = new FirefoxDriver();
         }
-        // this.driver.manage().window().fullscreen();
+        this.driver.manage().window().fullscreen();
     }
 
     @AfterTest
