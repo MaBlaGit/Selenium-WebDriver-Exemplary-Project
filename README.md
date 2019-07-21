@@ -20,11 +20,11 @@ This repo contains examplary implementation of automated tests agains  __http://
 
 3.Install IDE of your choice (Eclipse, IntelliJ IDEA)
 
-4.Clone/Download project: 
+4.Clone/Download project: https://github.com/MaBlaGit/Selenium-WebDriver-Exemplary-Project.git
 
 5.Open project and run in selected IDE
 
-6.To run project from the Terminal: https://github.com/MaBlaGit/Selenium-WebDriver-Exemplary-Project.git
+6.To run project from the Terminal:
 
 ```
 $ mvn test -DefaultSuiteFiles="./testng.xml"
