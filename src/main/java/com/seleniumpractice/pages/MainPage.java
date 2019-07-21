@@ -67,10 +67,10 @@ public class MainPage {
         for(int i=0; i<featuredProducts.size(); i++) {
             javascriptExecutor.executeScript("arguments[0].scrollIntoView(true);", featuredProducts.get(i));
             action.moveToElement(featuredProducts.get(i)).
-                    pause(3000).
-                    moveToElement(addToCartButton.get(i)).
+                    pause(4000).
+                    moveToElement(this.addToCartButton.get(i)).
                     click().
-                    pause(3000).
+                    pause(4000).
                     moveToElement(driver.findElement(By.cssSelector("span>i.icon-chevron-left"))).
                     click().
                     perform();
